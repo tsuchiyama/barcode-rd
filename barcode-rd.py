@@ -19,14 +19,12 @@ for barcode in detectedBarcodes:
 # Put the rectangle in image using
 # cv2 to highlight the barcode
 cv2.rectangle(img, (x-10, y-10),
-                          (x + w+10, y + h+10),
-                          (255, 0, 0), 2)
-             
-            if barcode.data!="":
-               
-            # Print the barcode data
-                print(barcode.data)
-                print(barcode.type)
+(x + w+10, y + h+10),
+(255, 0, 0), 2)
+if barcode.data!="":
+# Print the barcode data
+print(barcode.data)
+print(barcode.type)
                  
     #Display the image
     cv2.imshow("Image", img)
