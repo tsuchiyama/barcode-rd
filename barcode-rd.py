@@ -25,13 +25,11 @@ if barcode.data!="":
 # Print the barcode data
 print(barcode.data)
 print(barcode.type)
-                 
-    #Display the image
-    cv2.imshow("Image", img)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
- 
+#Display the image
+cv2.imshow("Image", img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
 if __name__ == "__main__":
-  # Take the image from user
-    image="Img.jpg"
-    BarcodeReader(image)
+# Take the image from user
+image="Img.jpg"
+BarcodeReader(image)
